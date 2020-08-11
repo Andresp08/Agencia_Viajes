@@ -1,0 +1,34 @@
+extends ../layout/index
+block slider 
+    .slider
+        h1 Rio de Janeiro
+        em Aventura
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p.text-justify There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+
+                p.text-justify There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", class="img-fluid")
+
+        //renderizar la vista de viajes
+        h2.text-center.mb-5 Próximos Viajes
+        include ../layout/partials/viajes
+
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canadá
+                        p.fecha 08 Agosto 2020
+                        p.precio $2,500 USD
+
+    .container
+        //renderizar los testimoniales
+        h2.text-center.my-5 Testimoniales
+        include ../layout/partials/testimoniales

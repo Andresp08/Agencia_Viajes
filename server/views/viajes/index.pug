@@ -1,0 +1,7 @@
+extends ../layout/index
+block contenido 
+    main.container.mt-5
+        //la variable viene del route
+        h1.text-center.mb-5 #{pagina} 
+        //renderizar los viajes
+        include ../layout/partials/viajes
